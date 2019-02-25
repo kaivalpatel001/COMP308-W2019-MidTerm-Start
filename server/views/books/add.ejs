@@ -1,0 +1,44 @@
+<% include ../partials/header.ejs %>
+
+<div class="row">
+    <div class="col-md-offset-3 col-md-6">
+        <h1>Insert Data</h1>
+        <form action="" class="form" method="POST">
+            <div class="form-group">
+                <lable for="Title"></lable>
+                <input type="text" class="form-control" id="title"
+                 placeholder="Enter Title" 
+                 name="title"
+                  required>
+            </div>
+            <div class="form-group">
+                <lable for="Price"></lable>
+                <input type="text" class="form-control" id="Price"
+                 placeholder="Enter Price" 
+                 name="price"
+                  required>
+            </div>
+            <div class="form-group">
+                <lable for="Author"></lable>
+                <input type="text" class="form-control" id="author"
+                 placeholder="Enter Name of an Author" 
+                 name="author"
+                  required>
+            </div>
+            <div class="form-group">
+                <lable for="Gener"></lable>
+                <input type="text" class="form-control" id="Price"
+                 placeholder="Enter Gener" 
+                 name="gener"
+                  required>
+            </div>
+            <a  type="submit" class="btn btn-primary">
+                <i class="fa fa-plus"></i>Submit</a>
+            <a href ="books/add" class="btn btn-warning"><i class="fa fa-ban"></i>Cancle</a>
+        </form> 
+    </div>
+</div>
+
+
+
+<% include ../partials/footer.ejs %>
