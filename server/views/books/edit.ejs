@@ -1,0 +1,67 @@
+<% include ../partials/header.ejs %>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-offset-3 col-md-6">
+            <h1><%= title %></h1>
+            <form class="form" method="POST">
+                <div class="form-group">
+                    <label for="Title">Title</label>
+                    <input type="text" placeholder="Enter new title"
+                    class="form-control" id="title" 
+                    name="title"
+                    value="<%= contact.firstName %>"
+                     required>
+                </div>
+                <div class="form-group">
+                        <label for="Description">Description</label>
+                        <input type="text" placeholder="Enter new Description"
+                        class="form-control" id="description" 
+                        name="description"  
+                        value="<%= contact.lastName %>"
+                        required>
+                </div>
+                <div class="form-group">
+                        <label for="Price">Price</label>
+                        <input type="text" placeholder="Enter new Price"
+                        class="form-control" id="Price" 
+                        name="Price"
+                        value="<%= contact.age %>" 
+                        required>
+                </div>
+                <div class="form-group">
+                    <label for="Author">Author</label>
+                    <input type="text" placeholder="Enter new Author name"
+                    class="form-control" id="author" 
+                    name="author"
+                    value="<%= contact.age %>" 
+                    required>
+                    <div class="form-group">
+                        <label for="Gener">Gener</label>
+                        <input type="text" placeholder="Enter new Gener"
+                        class="form-control" id="gener" 
+                        name="gener"
+                        value="<%= contact.age %>" 
+                        required>
+                </div>
+            </div>
+
+
+                <button type="submit" class="btn btn-primary">
+                    <i class="fa fa-check-square-o"></i> Submit</button>
+            </form>
+
+
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+<% include ../partials/footer.ejs %>
